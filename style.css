@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff8f8;
+  color: #222;
+  line-height: 1.7;
+}
+
+header {
+  background: linear-gradient(rgba(120,0,0,0.75), rgba(70,0,0,0.85)),
+  url("https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1600&auto=format&fit=crop") center/cover;
+  color: white;
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.hero h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.botao {
+  display: inline-block;
+  background: #111;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background: #c40000;
+}
+
+nav {
+  background: #111;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 15px 18px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ff4d4d;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  margin: 25px 0;
+  padding: 30px;
+  border-left: 6px solid #b30000;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  font-family: 'Merriweather', serif;
+  color: #a00000;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #7a0000;
+  margin-bottom: 8px;
+}
+
+.bloco {
+  margin-top: 20px;
+}
+
+ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.midia {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.midia img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.destaque {
+  background: #fff0f0;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.stat {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.stat span {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #b30000;
+  margin-bottom: 10px;
+}
+
+.fonte {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.denuncia {
+  background: #fff5f5;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li a {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+}
